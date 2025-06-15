@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DEV -- Portifolio Lucas Castro</title>
+ 
+</head>
+<body>
+    <nav class="navegacao">
+    <ul>
+        <li>
+            <a href="#inicio" class="menu-link">Inicio</a>
+        </li>
+        <li>
+            <a href="#sobre"class="menu-link">Sobre</a>
+        </li>
+         <li>
+            <a href="#projetos"class="menu-link">Projetos</a>
+        </li>
+        <li>
+            <a href="#certificados"class="menu-link">Certificados</a>
+        </li>
+          <li>
+            <a href="#contato"class="menu-link">Contato</a>
+        </li>
+    </ul>
+    </nav>
+    <main id="inicio" class="cabecalho">
+        <div>
+            <img src="img/lucas3.jpeg" alt="Foto Lucas de Castro" class="foto-perfil">
+            <h1>Lucas de Castro</h1>
+            <p>Desenvolvedor e Analista de sistemas</p>
+        </div> 
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="Sobre-caixa">
+            <p class="paragrafo">
+                Formado em Análise e Desenvolvimento de Sistemas pela UNIP, com formação técnica em Informática e diversos cursos complementares voltados à tecnologia e computação em nuvem. Tenho experiência profissional como vendedor externo, com destaque para habilidades em negociação, atendimento ao cliente e análise de mercado.
+
+                Possuo conhecimentos em linguagens de programação como Python, C# e C++, além de experiência com bancos de dados MySQL, SQL Server e Azure. Sou uma pessoa proativa, comunicativa e com facilidade de adaptação, sempre em busca de novos aprendizados e desafios.
+            </p>
+        </div>
+    </section>
+    
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa"> 
+            <div class="projetos-card">
+                <img src="img/cep.jpeg" alt="Imagem do Projeto 1" class="projetos-imagem">
+                <h3 class="info-projetos"> Buscador de CEP </h3>
+                <p class="paragrafo-projetos">Projeto de estudo criado em python usando CustomTkinter conectado com a api ViaCep</p>
+                            <a href="https://github.com/casstroo/BuscadorCep/tree/main/buscaCep" target="_blank" class="projeto-button">
+                    Ver no GitHub
+                </a>
+            </div>
+            <div class="projetos-card">
+                <img src="img/calculadora.jpeg" alt="Imagem do Projeto 2" class="projetos-imagem">
+                <h3 class="info-projetos">calculadora</h3>
+                <p class="paragrafo-projetos">Projeto de estudo usando Python com CustomTkinter</p>
+                                        <a href="https://github.com/casstroo/CalculadoraCustomctk/blob/main/calculadoracustomtk.py" target="_blank" class="projeto-button">
+                    Ver no GitHub
+                </a>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto1.png" alt="Imagem do Projeto 3" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 3</h3>
+                <p class="paragrafo-projetos">Projeto 3</p>
+            </div>
+        </div>
+
+
+        <section id="certificados" class="certificados">
+    <h2 class="certificados-titulo">Minha trajetória até aqui</h2>
+    <div class="certificados-container">
+        <div class="certificados-carrossel">
+            <div class="certificado-card active">
+                <img src="img/azure.jpg" alt="Certificado 1" class="certificado-imagem">
+                <div class="certificado-info">
+                    <h3 class="certificado-nome">Dp-900 Microsoft Azure</h3>
+                    <p class="certificado-instituicao">Senai Araraquara</p>
+                    <p class="certificado-ano">2025</p>
+                </div>
+            </div>
+            
+            <div class="certificado-card">
+                <img src="img/fundamentoslinux.jpg" alt="Certificado 2" class="certificado-imagem">
+                <div class="certificado-info">
+                    <h3 class="certificado-nome">Fundamentos do Linux</h3>
+                    <p class="certificado-instituicao">Fiap ON</p>
+                    <p class="certificado-ano">2023</p>
+                </div>
+            </div>
+            
+            <div class="certificado-card">
+                <img src="img/pythonfiap.jpg" alt="Certificado 3" class="certificado-imagem">
+                <div class="certificado-info">
+                    <h3 class="certificado-nome">Python</h3>
+                    <p class="certificado-instituicao">Fiap ON</p>
+                    <p class="certificado-ano">2024</p>
+                </div>
+            </div>
+            
+            <div class="certificado-card">
+                <img src="img/cyberseguranca.jpg" alt="Certificado 4" class="certificado-imagem">
+                <div class="certificado-info">
+                    <h3 class="certificado-nome">Cybersecurity</h3>
+                    <p class="certificado-instituicao">Fiap ON</p>
+                    <p class="certificado-ano">2024</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <button class="carrossel-btn prev" onclick="moverCarrossel(-1)">
+            <span>&#8249;</span>
+        </button>
+        <button class="carrossel-btn next" onclick="moverCarrossel(1)">
+            <span>&#8250;</span>
+        </button>
+        
+        <div class="carrossel-indicadores">
+            <span class="indicador active" onclick="certificadoAtual(1)"></span>
+            <span class="indicador" onclick="certificadoAtual(2)"></span>
+            <span class="indicador" onclick="certificadoAtual(3)"></span>
+            <span class="indicador" onclick="certificadoAtual(4)"></span>
+        </div>
+    </div>
+</section>
+
+    <section id="contato" class="contato">
+    <h2 class="contato-titulo">Entre em Contato</h2>
+    <p class="contato-subtitulo">Vamos conversar sobre oportunidades!</p>
+    
+    <div class="contato-container">
+        <div class="contato-info">
+            <h3>Lucas Castro</h3>
+            <p>Disponível para novas oportunidades</p>
+        </div>
+        
+        <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/casstro/" target="_blank" class="rede-social linkedin">
+                <div class="icone-container">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </div>
+                <div class="rede-info">
+                    <span class="rede-nome">LinkedIn</span>
+                    <span class="rede-descricao">Perfil Profissional</span>
+                </div>
+            </a>
+            
+            <a href="https://wa.me/16981519402" target="_blank" class="rede-social whatsapp">
+                <div class="icone-container">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.63z"/>
+                    </svg>
+                </div>
+                <div class="rede-info">
+                    <span class="rede-nome">WhatsApp</span>
+                    <span class="rede-descricao">Conversa Direta</span>
+                </div>
+            </a>
+            
+            <a href="https://github.com/casstroo" target="_blank" class="rede-social github">
+                <div class="icone-container">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </div>
+                <div class="rede-info">
+                    <span class="rede-nome">GitHub</span>
+                    <span class="rede-descricao">Meus Projetos</span>
+                </div>
+            </a>
+            
+            <a href="mailto:seuemail@gmail.com" class="rede-social email">
+                <div class="icone-container">
+                    <svg viewBox="0 0 24 24" class="icone">
+                        <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.749L12 10.724l9.615-6.903h.749c.904 0 1.636.732 1.636 1.636z"/>
+                    </svg>
+                </div>
+                <div class="rede-info">
+                    <span class="rede-nome">E-mail</span>
+                    <span class="rede-descricao">Contato Direto</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="contato-cta">
+            <p>Aberto para oportunidades de trabalho</p>
+        </div>
+    </div>
+</section>
+
+
+    
+<script>
+let certificadoIndex = 1;
+
+function moverCarrossel(n) {
+    mostrarCertificado(certificadoIndex += n);
+}
+
+function certificadoAtual(n) {
+    mostrarCertificado(certificadoIndex = n);
+}
+
+function mostrarCertificado(n) {
+    let certificados = document.getElementsByClassName("certificado-card");
+    let indicadores = document.getElementsByClassName("indicador");
+    
+    if (n > certificados.length) {
+        certificadoIndex = 1;
+    }
+    if (n < 1) {
+        certificadoIndex = certificados.length;
+    }
+    
+    for (let i = 0; i < certificados.length; i++) {
+        certificados[i].classList.remove("active");
+    }
+    
+    for (let i = 0; i < indicadores.length; i++) {
+        indicadores[i].classList.remove("active");
+    }
+    
+    certificados[certificadoIndex - 1].classList.add("active");
+    indicadores[certificadoIndex - 1].classList.add("active");
+}
+
+// Auto-play do carrossel (opcional)
+setInterval(() => {
+    moverCarrossel(1);
+}, 5000);
+</script>
+</body>
+</html>
